@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Bank App</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+     
 </head>
-<body>
-    <h1>Hi ma Shajalal</h1>
-    <h3>Hello</h3>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+
+        <header>
+            <nav class="flex justify-center items-center mt-20">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+                    <img class="w-64 absolute" src="assets/bg.png" alt="">
+                    <img class="w-16" src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+        <!-- Login section  -->
+
+        
+        <div class="hero bg-base-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+               
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label font-bold">Mobile Number</label>
+                    <input value="01732077391" id="mobile-number" type="number" class="input w-80" placeholder="Enter you mobile number" required /><br>
+                    <label class="fieldset-label font-bold">4 Digit Pin</label><br>
+                    <input value="1234" id="Enter-pin" type="text" class="input w-80" placeholder="Enter you pin" required />
+                    <div><a class="link link-hover font-bold">Forgot password?</a></div>
+                    <button id="btn-login" class="btn btn-neutral mt-4    w-80">Login</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+     
+     <script src="JavaScript/logn.js"></script>
     
 </body>
 </html>
