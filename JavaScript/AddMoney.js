@@ -7,14 +7,21 @@ document.getElementById('Add_money').addEventListener('click',function(event){
 
      const mainBalance= document.getElementById("main-balance").innerText;
      const convert = parseFloat(mainBalance);
+     if(pin.length===16){
 
-     if(convertedPin===1234){
-        // console.log("This pin is ok")
-        const sum = convert + convertedAmount;
-        document.getElementById("main-balance").innerText = sum;
+      if(convertedPin===1234){
+         // console.log("This pin is ok")
+         const sum = convert + convertedAmount;
+         document.getElementById("main-balance").innerText = sum;
+ 
+      }
+      else{
+         alert("Please check your PIN number");
+      }
 
-     }
+     } 
      else{
-        alert("Please check your PIN number");
+      alert("Please check your account number")
      }
+      
 })
