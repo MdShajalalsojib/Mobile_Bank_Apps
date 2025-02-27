@@ -7,7 +7,7 @@ document.getElementById('Add_money').addEventListener('click',function(event){
 
      const mainBalance= document.getElementById("main-balance").innerText;
      const convert = parseFloat(mainBalance);
-     if(pin.length===16){
+     if(pin.length===11){
 
       if(convertedPin===1234){
          // console.log("This pin is ok")

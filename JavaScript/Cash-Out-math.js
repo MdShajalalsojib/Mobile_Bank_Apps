@@ -7,7 +7,7 @@ document.getElementById("cashOut").addEventListener("click",function(event){
     convertedAmout = parseFloat(amount);
     const mainBalance = document.getElementById("main-balance").innerText;
     const convertedMainBalance = parseFloat(mainBalance);
-    if(amount.length===16){
+    if(amount.length===11){
 
         if (convertedPin===1234) {
             const Subtraction = convertedMainBalance - convertedAmout;
