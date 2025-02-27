@@ -13,7 +13,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold">$ 4500</h1>
+                    <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
                     <p class="border rounded p-1">available balance</p>
                 </div>
                 <button class="btn">logout</button>
@@ -26,13 +26,13 @@
 
 
                 <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
-                    <div class="box border  p-4 text-center rounded-lg
+                    <div id="add-money-box" class="box border  p-4 text-center rounded-lg
                       bg-slate-400">
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <h3 class="font-bold  ">Add Money</h3>
 
                     </div>
-                    <div class="box border  p-4 text-center rounded-lg bg-slate-400">
+                    <div id="cas-hout-box" class="box border  p-4 text-center rounded-lg bg-slate-400">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                         <h3 class="font-bold  "> Cashout</h3>
 
@@ -59,7 +59,7 @@
                     </div>
 
                 </div>
-                <section>
+                <section id="addMoney">
                     <h2 class="font-bold text-2xl p-3">Add money</h2>
                     <div class="">
                         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -84,7 +84,7 @@
                                     <input value="01732077391" id="mobile-number" type="number" class="input w-80 mt-2" placeholder=" Enter 11 digit account number" required /><br>
 
                                     <label class="fieldset-label font-bold">Amount to Add</label>
-                                    <input value="01732077391" id="mobile-number" type="number" class="input w-80 mt-2" placeholder="Add Amount to withdraw" required /><br>
+                                    <input   id="Amount" type="number" class="input w-80 mt-2" placeholder="Add Amount to withdraw" required /><br>
                                     
 
                                     <label class="fieldset-label font-bold">Pin Number </label><br>
@@ -93,18 +93,40 @@
                                     
                                     <div><a class="link link-hover font-bold">Forgot password?</a></div>
                                      
-                                <button class="btn btn-neutral mt-4 border-none bg-[#0874F2] w-80">Add Money</button>
+                                <button   id="Add_money" class="btn btn-neutral mt-4 border-none bg-[#0874F2] w-80">Add Money</button>
                               </fieldset>
                             </div>
                           </div>
                         </div>
                       </div>
+
                 </section>
+                <section id="cashout">
+                    <h2 class="font-bold text-2xl p-3">CasOut</h2>
+                    <fieldset class="fieldset">
+                        <label class="fieldset-label font-bold">Bank Account Number</label>
+                        <input value="01732077391" id="mobile-number" type="number" class="input w-80 mt-2" placeholder=" Enter 11 digit account number" required /><br>
+
+                        <label class="fieldset-label font-bold">Amount to Add</label><br>
+                        <input   id="Amount" type="number" class="input w-80 mt-2" placeholder="Add Amount to withdraw" required /><br>
+                        
+
+                        <label class="fieldset-label font-bold">Pin Number </label><br>
+                        <input value="1234" id="Enter-pin" type="text" class="input w-80 mt-2" placeholder="Enter 4 digit pin number" required />
+
+                        
+                        <div><a class="link link-hover font-bold">Forgot password?</a></div>
+                         
+                    <button   id="Add_money" class="btn btn-neutral mt-4 border-none bg-[#0874F2] w-80">Withdraw Money</button>
+                  </fieldset>
+                   </section>
         
              </section>
         </header>
 
      </section>
+     <script src="JavaScript/AddMoney.js"></script>
+     <script src="JavaScript/Casout.js"></script>
       
 </body>
 </html>
