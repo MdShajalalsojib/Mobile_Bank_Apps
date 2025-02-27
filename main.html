@@ -63,8 +63,6 @@
                     <h2 class="font-bold text-2xl p-3">Add money</h2>
                     <div class="">
                         <div class="hero-content flex-col lg:flex-row-reverse">
-                         
-                    
                           <div class="card    w-full max-w-sm shrink-0 shadow-2xl">
                             <div class="card-body">
                                 <legend class="font-bold">Select Bank</legend>
@@ -74,9 +72,9 @@
                                     <option disabled selected value="">
                                          Select bank
                                     </option>
-                           <option value="Bkash">Bkash</option>
-                           <option value="Nagad">nagad</option>
-                           <option value="dbbl">DBBL</option>
+                                      <option value="Bkash">Bkash</option>
+                                      <option value="Nagad">nagad</option>
+                                      <option value="dbbl">DBBL</option>
 
                                 </select>
                                 <fieldset class="fieldset">
@@ -103,22 +101,31 @@
                 </section>
                 <section id="cashout">
                     <h2 class="font-bold text-2xl p-3">CasOut</h2>
-                    <fieldset class="fieldset">
-                        <label class="fieldset-label font-bold">Bank Account Number</label>
-                        <input value="01732077391" id="mobile-number" type="number" class="input w-80 mt-2" placeholder=" Enter 11 digit account number" required /><br>
 
-                        <label class="fieldset-label font-bold">Amount to Add</label><br>
-                        <input   id="Amount" type="number" class="input w-80 mt-2" placeholder="Add Amount to withdraw" required /><br>
+
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card    w-full max-w-sm shrink-0 shadow-2xl">
+                          <div class="card-body">
+                              <fieldset class="fieldset">
+                             <label class="fieldset-label font-bold">Bank Account Number</label>
+                              <input value="01732077391" id="mobile-number" type="number" class="input w-80 mt-2" placeholder=" Enter 11 digit account number" required /><br>
+
+                              <label class="fieldset-label font-bold">Amount to Add</label><br>
+                              <input   id="Cashout_Amount" type="number" class="input w-80 mt-2" placeholder="Add Amount to withdraw" required /><br>
                         
 
-                        <label class="fieldset-label font-bold">Pin Number </label><br>
-                        <input value="1234" id="Enter-pin" type="text" class="input w-80 mt-2" placeholder="Enter 4 digit pin number" required />
+                               <label class="fieldset-label font-bold">Pin Number </label><br>
+                              <input  id="Cashout-pin" type="text" class="input w-80 mt-2" placeholder="Enter 4 digit pin number" required />
 
                         
-                        <div><a class="link link-hover font-bold">Forgot password?</a></div>
+                              <div><a class="link link-hover font-bold">Forgot password?</a></div>
                          
-                    <button   id="Add_money" class="btn btn-neutral mt-4 border-none bg-[#0874F2] w-80">Withdraw Money</button>
-                  </fieldset>
+                             <button   id="cashOut" class="btn btn-neutral mt-4 border-none bg-[#0874F2] w-80">Withdraw Money</button>
+                              </fieldset>
+
+                            </div>
+                        </div>
+                  </div>
                    </section>
         
              </section>
@@ -127,6 +134,7 @@
      </section>
      <script src="JavaScript/AddMoney.js"></script>
      <script src="JavaScript/Casout.js"></script>
+     <script src="JavaScript/Cash-Out-math.js"></script>
       
 </body>
 </html>
