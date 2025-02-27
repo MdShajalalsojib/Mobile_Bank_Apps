@@ -15,6 +15,6 @@ document.getElementById('Add_money').addEventListener('click',function(event){
 
      }
      else{
-        console.log("Please check your PIN number")
+        alert("Please check your PIN number");
      }
 })
