@@ -10,10 +10,7 @@ document.getElementById("cashOut").addEventListener("click",function(event){
 
     const mainBalance = document.getElementById("main-balance").innerText;
     const convertedMainBalance = parseFloat(mainBalance);
-    if(amount >mainBalance){
-        alert("invalid amout");
-        return;
-       }
+     
 
         if(acount.length != 11){
                 window.alert("Mobile number should be 11 length!")
