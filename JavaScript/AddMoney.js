@@ -11,10 +11,7 @@ document.getElementById('Add_money').addEventListener('click',function(event){
      const mainBalance= document.getElementById("main-balance").innerText;
      const convert = parseFloat(mainBalance);
 
-     if(Amount>mainBalance){
-      alert("invalid amout");
-      return;
-     }
+      
 
 
       if(acount.length != 11){
